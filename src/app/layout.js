@@ -11,9 +11,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={lato.className}>
+      <body className={roboto.className}>
         <GlobalState>
-          <Navbar className={roboto.className} />
+          <Navbar />
           <main>{children}</main>
         </GlobalState>
       </body>
