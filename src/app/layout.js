@@ -1,7 +1,8 @@
 import './globals.css'
-import { lato, roboto } from './fonts'
+import { lato, roboto } from './_lib/fonts'
 import GlobalState from '@/context'
 import Navbar from '@/component/Navbar'
+import Footer from '@/component/Footer'
 
 export const metadata = {
   title: 'Onile',
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
         <GlobalState>
           <Navbar />
           <main>{children}</main>
+          <Footer />
         </GlobalState>
       </body>
     </html>

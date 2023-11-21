@@ -1,7 +1,7 @@
 "use client";
 
 import Card from '../Card/index.js'
-import { useState } from 'react';
+
 
 const Feature = () => {
 

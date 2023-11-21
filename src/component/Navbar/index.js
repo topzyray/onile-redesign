@@ -20,15 +20,15 @@ const Navbar = () => {
         <Link href="/"><Image src={logo} alt='Onile Logo' width={80} height={50} /></Link>
         <div className='hidden sm:flex'>
           <ul className='hidden sm:flex gap-10 text-base md:text-lg font-bold'>
-            <Link href="/" className='hover:underline hover:font-bold focus:text-[#FF7F50] focus:font-bold'><li>Home</li></Link>
-            <Link href="/properties" className='hover:underline hover:font-bold focus:text-[#FF7F50] focus:font-bold'><li>Properties</li></Link>
-            <Link href="/services" className='hover:underline hover:font-bold focus:text-[#FF7F50] focus:font-bold'><li>Services</li></Link>
-            <Link href="/contact" className='hover:underline hover:font-bold focus:text-[#FF7F50] focus:font-bold'><li>Contact</li></Link>
+            <Link href="/" className='transition-all duration-500 ease-in-out hover:-translate-y-1 hover:underline hover:font-bold focus:text-[#FF7F50] focus:font-bold'><li>Home</li></Link>
+            <Link href="/properties" className='transition-all duration-500 ease-in-out hover:-translate-y-1 hover:underline hover:font-bold focus:text-[#FF7F50] focus:font-bold'><li>Properties</li></Link>
+            <Link href="/services" className='transition-all duration-500 ease-in-out hover:-translate-y-1 hover:underline hover:font-bold focus:text-[#FF7F50] focus:font-bold'><li>Services</li></Link>
+            <Link href="/contact" className='transition-all duration-500 ease-in-out hover:-translate-y-1 hover:underline hover:font-bold focus:text-[#FF7F50] focus:font-bold'><li>Contact</li></Link>
           </ul>
         </div>
         <div className='hidden sm:flex flex-col items-center gap-1'>
           <Image src={avatar} alt='Profile avatar' width={30} height={30} />
-          <Link href="/auth" className='font-bold hover:underline hover:font-bold focus:text-[#FF7F50] focus:font-bold'><p>Sign Up/Sign In</p></Link>
+          <Link href="/auth" className='font-bold transition-all duration-500 ease-in-out hover:-translate-y-1 hover:underline hover:font-bold focus:text-[#FF7F50] focus:font-bold'><p>Sign Up/Sign In</p></Link>
         </div>
         <div onClick={handleNav} className='sm:hidden cursor-pointer p-2 hover:bg-[#2a3648] hover:rounded-lg'>
           <AiOutlineMenu size={25} />

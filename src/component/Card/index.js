@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const Card = () => {
   return <>
-    <Link href="#" className='bg-[#FAFAFA] hover:bg-gray-200 active:bg-gray-300 focus:outline-none focus:ring focus:ring-gray-300'>
+    <Link href="/properties/1" className='bg-[#FAFAFA] hover:bg-gray-200 active:bg-gray-300 focus:outline-none focus:ring focus:ring-gray-300'>
         <div className="flex flex-col content-center gap-3 rounded-lg w-[16.875rem] h-[23.627rem] border border-solid border-[#CECECE]  ">
             <div>
                 <Image src="/assets/house11.jpg" alt='Card Image' width={270} height={237} className='rounded-t-lg object-cover' />
