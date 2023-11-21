@@ -6,8 +6,17 @@ import { useIsVisible } from '@/app/_lib/useIsVisible';
 
 const Stats = () => {
 
-    const ref = useRef()
-    const isVisible = useIsVisible(ref)
+    const ref1 = useRef()
+    const isVisible1 = useIsVisible(ref1)
+
+    const ref2 = useRef()
+    const isVisible2 = useIsVisible(ref2)
+
+    const ref3 = useRef()
+    const isVisible3 = useIsVisible(ref3)
+
+    const ref4 = useRef()
+    const isVisible4 = useIsVisible(ref4)
 
     return <>
         <section className='bg-[#F3F4F5] text-[#344054] w-full flex justify-center pt-8 pb-12'>
@@ -15,17 +24,17 @@ const Stats = () => {
                 <section className='text-center'>
                     <h1 className='text-[1.5rem] md:text-[2rem] font-bold'>Our Statistics</h1>
                 </section>
-                <section ref={ref} className={`grid sm:grid-cols-4 gap-4 lg:gap-6 xl:gap-10   transition-opacity ease-in duration-700 ${isVisible ? "opacity-100" : "opacity-0"}`}>
-                    <section className='text-center font-medium'>
+                <section className="grid sm:grid-cols-4 gap-4 lg:gap-6 xl:gap-10">
+                    <section ref={ref1} className={`text-center font-medium    transition-opacity ease-in duration-700 ${isVisible1 ? "opacity-100" : "opacity-0"}`}>
                         <p className='text-sm sm:text-base md:text-lg lg:text-xl'>5 years + <br /> Experience</p>
                     </section>
-                    <section className='text-center font-medium'>
+                    <section ref={ref2} className={`text-center font-medium    transition-opacity ease-in duration-700 ${isVisible2 ? "opacity-100" : "opacity-0"}`}>
                         <p className='text-sm sm:text-base md:text-lg lg:text-xl'>2000+ <br /> Completed Projects</p>
                     </section>
-                    <section className='text-center font-medium'>
+                    <section ref={ref3} className={`text-center font-medium    transition-opacity ease-in duration-700 ${isVisible3 ? "opacity-100" : "opacity-0"}`}>
                         <p className='text-sm sm:text-base md:text-lg lg:text-xl'>259 <br /> Ongoing Projects</p>
                     </section>
-                    <section className='text-center font-medium'>
+                    <section ref={ref4} className={`text-center font-medium    transition-opacity ease-in duration-700 ${isVisible4 ? "opacity-100" : "opacity-0"}`}>
                         <p className='text-sm sm:text-base md:text-lg lg:text-xl'>3000 + <br /> Happy Customers</p>
                     </section>
                 </section>
