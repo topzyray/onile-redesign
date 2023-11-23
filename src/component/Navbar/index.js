@@ -2,33 +2,45 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import logo from '/public/assets/logo.png'
+import logo from '/public/assets/onile_light_ash.png'
 import avatar from '/public/assets/avatar.jpg'
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 import {useState} from 'react'
+import { usePathname } from 'next/navigation';
+
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
+
+  const pathname = usePathname()
 
   const handleNav = () => {
     setMenuOpen((prevMenu) => !prevMenu)
   }
 
   return (
-    <nav className='fixed w-full h-[5rem] sm:h-[8rem] shadow-lg bg-[#1D2939] text-[#F2F4F7]'>
+    <nav className='fixed w-full h-[5rem] sm:h-[8rem] shadow-lg bg-[#1D2939] opacity-100 text-[#F2F4F7]'>
       <div className='flex justify-between items-center h-full w-full px-4 2xl:px-16'>
-        <Link href="/"><Image src={logo} alt='Onile Logo' width={80} height={50} /></Link>
+        <Link className={`link ${pathname === '/' ? 'focus:text-[#FF7F50] focus:font-bold' : 'hover:underline hover:font-bold'}`} href="/">
+          <Image src={logo} alt='Onile Logo' className='w-16 sm:w-24'/>
+        </Link>
         <div className='hidden sm:flex'>
           <ul className='hidden sm:flex gap-10 text-base md:text-lg font-bold'>
-            <Link href="/" className='transition-all duration-500 ease-in-out hover:-translate-y-1 hover:underline hover:font-bold focus:text-[#FF7F50] focus:font-bold'><li>Home</li></Link>
-            <Link href="/properties" className='transition-all duration-500 ease-in-out hover:-translate-y-1 hover:underline hover:font-bold focus:text-[#FF7F50] focus:font-bold'><li>Properties</li></Link>
-            <Link href="/services" className='transition-all duration-500 ease-in-out hover:-translate-y-1 hover:underline hover:font-bold focus:text-[#FF7F50] focus:font-bold'><li>Services</li></Link>
-            <Link href="/contact" className='transition-all duration-500 ease-in-out hover:-translate-y-1 hover:underline hover:font-bold focus:text-[#FF7F50] focus:font-bold'><li>Contact</li></Link>
+            <Link className={`link ${pathname === '/' ? 'focus:text-[#FF7F50] focus:font-bold' : 'hover:underline hover:font-bold'}`} href="/"><li>Home</li></Link>
+            <Link className={`link ${pathname === '/properties' ? 'focus:text-[#FF7F50] focus:font-bold' : 'hover:underline hover:font-bold'}`} href="/properties" ><li>Properties</li></Link>
+            <Link className={`link ${pathname === '/services' ? 'focus:text-[#FF7F50] focus:font-bold' : 'hover:underline hover:font-bold'}`} href="/services" ><li>Services</li></Link>
+            <Link className={`link ${pathname === '/contact' ? 'focus:text-[#FF7F50] focus:font-bold' : 'hover:underline hover:font-bold'}`} href="/contact" ><li>Contact</li></Link>
           </ul>
         </div>
         <div className='hidden sm:flex flex-col items-center gap-1'>
-          <Image src={avatar} alt='Profile avatar' width={30} height={30} />
-          <Link href="/auth" className='font-bold transition-all duration-500 ease-in-out hover:-translate-y-1 hover:underline hover:font-bold focus:text-[#FF7F50] focus:font-bold'><p>Sign Up/Sign In</p></Link>
+          {isLoggedIn ? 
+            <Image src={avatar} alt='Profile avatar' width={30} height={30} />
+            :
+            <Link href="/auth" className='font-bold hover:font-bold hover:bg-[#F2F4F7] hover:text-[#1D2939] hover:rounded-md focus:text-[#FF7F50] focus:outline outline-offset-0 focus:outline-[#FF7F50] focus:font-bold'>
+              <p className='border py-2 px-3 rounded-md'>Sign Up/Sign In</p>
+            </Link>
+          }
         </div>
         <div onClick={handleNav} className='sm:hidden cursor-pointer p-2 hover:bg-[#2a3648] hover:rounded-lg'>
           <AiOutlineMenu size={25} />
@@ -67,3 +79,9 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+
+
+{/* <Link className={`link ${pathname === '/auth' ? 'focus:text-[#FF7F50] focus:outline outline-offset-0 focus:outline-[#FF7F50] focus:font-bold' : 'font-bold hover:font-bold hover:bg-[#F2F4F7] hover:text-[#1D2939] hover:rounded-md'}`} href="/auth" >
+  <p className='border py-2 px-3 rounded-md'>Sign Up/Sign In</p>
+</Link> */}
