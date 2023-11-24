@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import logo from '/public/assets/onile_light_ash.png'
-import avatar from '/public/assets/avatar.jpg'
+import avatar from '/public/assets/tope.png'
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 import {useState} from 'react'
 import { usePathname } from 'next/navigation';
@@ -35,7 +35,7 @@ const Navbar = () => {
         </div>
         <div className='hidden sm:flex flex-col items-center gap-1'>
           {isLoggedIn ? 
-            <Image src={avatar} alt='Profile avatar' width={30} height={30} />
+            <Image src={avatar} alt='Profile avatar' width={30} height={30} className="w-10 h-10 rounded-full" />
             :
             <Link href="/auth" className='font-bold hover:font-bold hover:bg-[#F2F4F7] hover:text-[#1D2939] hover:rounded-md focus:text-[#FF7F50] focus:outline outline-offset-0 focus:outline-[#FF7F50] focus:font-bold'>
               <p className='border py-2 px-3 rounded-md'>Sign Up/Sign In</p>
@@ -68,11 +68,14 @@ const Navbar = () => {
         </div>
 
         <div className='flex-col py-4 mb-2'>
-          <Image src={avatar} alt='Profile avatar' width={30} height={30} />
-          <Link href="/auth" className='font-bold hover:underline hover:font-bold focus:text-[#FF7F50] focus:font-bold'><p className='text-sm'>Sign Up/Sign In</p></Link>
+          {isLoggedIn ?
+            <Image src={avatar} alt='Profile avatar' width={30} height={30} className='w-10 h-10 rounded-full' />
+            :
+            <Link href="/auth" className='font-bold hover:underline hover:font-bold focus:text-[#FF7F50] focus:font-bold'><p className='text-sm' onClick={() => setMenuOpen(false)}>Sign Up/Sign In</p></Link>
+          }
         </div>
 
-        <Link href="/"><Image src={logo} alt='Onile Logo' width={80} height={50} /></Link>
+        <Link href="/"><Image src={logo} alt='Onile Logo' width={80} height={50} className='w-16 sm:w-24' /></Link>
       </div>
     </nav>
   )
