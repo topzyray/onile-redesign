@@ -12,7 +12,7 @@ const Footer = () => {
                     <p className="pb-2 text-sm font-normal">Receive Onile latest updates in your inbox</p>
                     <div className="flex gap-1">
                         <div className="shrink-0">
-                            <input type="email" name="email" id="email" placeholder="Email address" autoComplete="address-level2" className="block min-w-[10rem] lg:w-60 rounded-md border-0 py-1 md:py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-orange-300 placeholder:text-gray-400 placeholder:pl-2 placeholder:font-normal placeholder:text-sm focus:ring-2 focus:ring-inset focus:ring-[#FF7F50] sm:text-sm sm:leading-6" />
+                            <input type="email" name="email" id="email" placeholder="Email address" autoComplete="email" className="block min-w-[10rem] lg:w-60 rounded-md border-0 py-1 md:py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-orange-300 placeholder:text-gray-400 placeholder:pl-2 placeholder:font-normal placeholder:text-sm focus:ring-2 focus:ring-inset focus:ring-[#FF7F50] sm:text-sm sm:leading-6" />
                         </div>
                         <button className="shrink-0 font-normal sm:font-semibold text-sm md:py-2 px-3 rounded-md text-[#FFFFFF] bg-[#FF7F50] hover:bg-orange-600 active:bg-orange-700 focus:outline-none focus:ring focus:ring-orange-300">
                             Sign Up
