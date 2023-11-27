@@ -9,7 +9,7 @@ import house4 from '/public/assets/house4.jpg'
 
 const Properties = () => {
   return <>
-    <section className="pt-20 sm:pt-32 flex w-full min-h-screen flex-col items-center justify-between">
+    <section className="pt-20 sm:pt-[6.5rem] flex w-full min-h-screen flex-col items-center justify-between">
       <section className="w-full flex flex-col">
 
         {/* Search field on top */}
@@ -38,7 +38,7 @@ const Properties = () => {
         </section>
 
         {/* Available properties */}
-        <section className='py-8'>
+        <section className='py-8 xl:px-[6rem]'>
           <section className="flex flex-wrap justify-center gap-5">
             <Card imageUrl={house1} altText="Image of Property 1" title="Modern 3 Bedroom Duplex" location="123, Olayinka Street, Ado Ekiti." size="2300 sq.ft" price="N 489,000" />
             <Card imageUrl={house2} altText="Image of Property 2" title="Modern 4 Bedroom Duplex" location="47, Bamisile Avenue, Ikere Ekiti." size="5045 sq.ft" price="N 420,900" />

@@ -9,7 +9,7 @@ const Hero = () => {
     {/* You may want to work on the range of this screen sizes for the parent container min-[641px]:h-[50rem] max-[831px]:h-[60rem]  */}
     <section 
         style={{backgroundImage: `url('/assets/hero_bg.gif')`, backgroundSize: 'cover'}}
-        className="pt-4 sm:pt-36 w-full h-[44rem] sm:h-[50rem] md:h-[53rem] lg:h-[53rem] xl:h-[46rem] flex flex-col sm:flex-row justify-start">
+        className="pt-4 sm:pt-[7.5rem] w-full h-[44rem] sm:h-[50rem] md:h-[53rem] lg:h-[53rem] xl:h-[46rem] flex flex-col sm:flex-row justify-start">
         <div className="w-full px-8 pt-28 sm:px-0 sm:py-0 sm:basis-1/2 sm:mx-16 sm:my-[3.95rem] lg:mx-16">
             <h1 className="text-[#F2F4F7] text-[2rem] sm:text-[3rem] mb-2 font-bold">Your Dream Awaits</h1>
             <p className="text-[#F2F4F7] text-[1.2rem] sm:text-[1.5rem] mb-[0.75rem]">Realize Your Homeownership Goals</p>

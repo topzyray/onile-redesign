@@ -20,10 +20,10 @@ const Navbar = () => {
   }
 
   return (
-    <nav className='fixed w-full h-[5rem] sm:h-[8rem] shadow-lg bg-[#1D2939] opacity-100 text-[#F2F4F7]'>
+    <nav className='fixed w-full h-[5rem] sm:h-[6.5rem] shadow-lg bg-[#1D2939] opacity-100 text-[#F2F4F7]'>
       <div className='flex justify-between items-center h-full w-full px-4 2xl:px-16'>
         <Link className={`link ${pathname === '/' ? 'focus:text-[#FF7F50] focus:font-bold' : 'hover:underline hover:font-bold'}`} href="/">
-          <Image src={logo} alt='Onile Logo' className='w-16 sm:w-24'/>
+          <Image src={logo} alt='Onile Logo' className='w-16 sm:w-20'/>
         </Link>
         <div className='hidden sm:flex'>
           <ul className='hidden sm:flex gap-10 text-base md:text-lg font-bold'>
