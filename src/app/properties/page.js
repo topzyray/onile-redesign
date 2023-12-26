@@ -32,7 +32,7 @@ const Properties = () => {
           </section>
           <section className="bg-[#00B3D1] text-center text-[#F2F4F7] w-[19rem] sm:w-[16.375rem] rounded-r-md md:rounded-r-2xl py-1 md:py-4 inline-flex flex-col justify-center content-center">
             <p className='text-sm sm:text-base md:text-lg lg:text-2xl font-bold'>Ready to sell your property?</p>
-            <div><p className='w-6 h-6 md:w-8 md:h-8 md:my-1 bg-white text-[#00B3d1] text-center md:text-3xl rounded-full inline-flex flex-col justify-center content-center'>+</p></div>
+            <div><Link href='/addproperty' className=''><p className='w-6 h-6 md:w-8 md:h-8 md:my-1 bg-[#F2F4F7] text-[#00B3d1] text-center md:text-3xl rounded-full inline-flex flex-col justify-center content-center hover:shadow-lg hover:text-white hover:bg-gray-400'>+</p></Link></div>
             <p className='text-xs sm:text-base font-normal'>List your property today !</p>
           </section>
         </section>
