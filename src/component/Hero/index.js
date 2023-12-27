@@ -2,7 +2,6 @@
 
 import Image from 'next/image'
 
-
 const Hero = () => {
   return (
     <>
@@ -14,9 +13,13 @@ const Hero = () => {
             <h1 className="text-[#F2F4F7] text-[2rem] sm:text-[3rem] mb-2 font-bold">Your Dream Awaits</h1>
             <p className="text-[#F2F4F7] text-[1.2rem] sm:text-[1.5rem] mb-[0.75rem]">Realize Your Homeownership Goals</p>
             <p className="lg:w-4/5 text-[#F2F4F7] text-[0.7rem] sm:text-[0.9rem] text-justify">Welcome to the world of exquisite real estate, where luxury meets lifestyle. Explore a curated collection of exceptional properties that redefine the art of living.</p>
-            <button className="text-[#FFFFFF] text-[1rem] sm:text-[1.2rem] font-semibold px-[2rem] py-[0.6rem] my-[0.8rem] rounded-xl bg-[#FF7F50] hover:bg-orange-600 active:bg-orange-700 focus:outline-none focus:ring focus:ring-orange-300">
-                Explore Now
-            </button>
+            
+            <a href='#feature'>
+                <button className="text-[#FFFFFF] text-[1rem] sm:text-[1.2rem] font-semibold px-[2rem] py-[0.6rem] my-[0.8rem] rounded-xl bg-[#FF7F50] hover:bg-orange-600 active:bg-orange-700 focus:outline-none focus:ring focus:ring-orange-300">
+                    Explore Now
+                </button>
+            </a>
+            
             <div className='bg-white rounded-t-xl h-[2.5rem] sm:h-[3rem] w-[14rem] flex mt-6'>
                 <div className="text-[#FFFFFF] text-[1rem] bg-[#FF7F50] h-full w-1/2 flex flex-col justify-center text-center rounded-tl-xl">
                     For Rent

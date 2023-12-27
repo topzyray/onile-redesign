@@ -10,7 +10,7 @@ import house4 from '/public/assets/house4.jpg'
 const Feature = () => {
 
   return <>
-    <section className='bg-white w-full flex justify-center py-8'>
+    <section className='bg-white w-full flex justify-center py-8' id="feature">
       <section className='flex flex-col gap-6'>
           <section className='text-center'>
               <h1 className='text-[#344054] text-[1.5rem] md:text-[2rem] font-bold'>Featured Listing</h1>
