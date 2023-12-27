@@ -1,9 +1,14 @@
 "use client";
 
 import Link from 'next/link'
+import { usePathname } from "next/navigation";
 
 
 const Footer = () => {
+
+    // Pathname is for tracking active links
+    const pathname = usePathname();
+
     return <>
         <section className='w-full h-auto shadow-lg bg-[#1D2939] text-[#F2F4F7] pt-8 pb-8 lg:pt-20 lg:pb-0 px-4 md:px-10 xl:px-32'>
             <section className="grid place-items-stretch grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 grid-rows-2 gap-4 sm:gap-6 lg:gap-0 font-semibold">
@@ -23,27 +28,27 @@ const Footer = () => {
                 <section className="lg:row-start-1 lg:col-span-2 lg:text-center h-[5rem]">
                     <h4 className="text-base font-semibold mb-4">Explore</h4>
                     <ul className="text-sm font-normal">
-                        <Link href="/archives" className='hover:underline hover:font-bold focus:text-[#FF7F50]'><li className='sm:mb-3'>Archives</li></Link>
-                        <Link href="/buy" className='hover:underline hover:font-bold focus:text-[#FF7F50]'><li className='sm:mb-3'>Buy Properties</li></Link>
-                        <Link href="/calc" className='hover:underline hover:font-bold focus:text-[#FF7F50]'><li className='sm:mb-3'>Mortgage Calculator</li></Link>
+                        <Link href="/archives" className={pathname === '/archives' ? "text-[#FF7F50] font-bold" : "hover:underline hover:font-bold"}><li className='sm:mb-3'>Archives</li></Link>
+                        <Link href="/buy" className={pathname === '/buy' ? "text-[#FF7F50] font-bold" : "hover:underline hover:font-bold"}><li className='sm:mb-3'>Buy Properties</li></Link>
+                        <Link href="/calc" className={pathname === '/calc' ? "text-[#FF7F50] font-bold" : "hover:underline hover:font-bold"}><li className='sm:mb-3'>Mortgage Calculator</li></Link>
                     </ul>
                 </section>
 
                 <section className="lg:row-start-1 lg:col-span-2 lg:text-center">
                     <h4 className="text-base font-semibold mb-4">Quick Links</h4>
                     <ul className="text-sm font-normal">
-                        <Link href="/about" className='hover:underline hover:font-bold focus:text-[#FF7F50]'><li className='sm:mb-3'>About Us</li></Link>
-                        <Link href="/contact" className='hover:underline hover:font-bold focus:text-[#FF7F50]'><li className='sm:mb-3'>Contact Us</li></Link>
-                        <Link href="/faq" className='hover:underline hover:font-bold focus:text-[#FF7F50]'><li className='sm:mb-3'>Frequently Asked Questions</li></Link>
+                        <Link href="/about" className={pathname === '/about' ? "text-[#FF7F50] font-bold" : "hover:underline hover:font-bold"}><li className='sm:mb-3'>About Us</li></Link>
+                        <Link href="/contact" className={pathname === '/contact' ? "text-[#FF7F50] font-bold" : "hover:underline hover:font-bold"}><li className='sm:mb-3'>Contact Us</li></Link>
+                        <Link href="/faq" className={pathname === '/faq' ? "text-[#FF7F50] font-bold" : "hover:underline hover:font-bold"}><li className='sm:mb-3'>Frequently Asked Questions</li></Link>
                     </ul>
                 </section>
 
                 <section className="lg:row-start-1 lg:col-span-2 lg:text-center">
                     <h4 className="text-base font-semibold mb-4">Resources</h4>
                     <ul className="text-sm font-normal">
-                        <Link href="/news" className='hover:underline hover:font-bold focus:text-[#FF7F50]'><li className='sm:mb-3'>News</li></Link>
-                        <Link href="/glossary" className='hover:underline hover:font-bold focus:text-[#FF7F50]'><li className='sm:mb-3'>Glossary</li></Link>
-                        <Link href="/guide" className='hover:underline hover:font-bold focus:text-[#FF7F50]'><li className='sm:mb-3'>Purchase Guide</li></Link>
+                        <Link href="/news" className={pathname === '/news' ? "text-[#FF7F50] font-bold" : "hover:underline hover:font-bold"}><li className='sm:mb-3'>News</li></Link>
+                        <Link href="/glossary" className={pathname === '/glossary' ? "text-[#FF7F50] font-bold" : "hover:underline hover:font-bold"}><li className='sm:mb-3'>Glossary</li></Link>
+                        <Link href="/guide" className={pathname === '/guide' ? "text-[#FF7F50] font-bold" : "hover:underline hover:font-bold"}><li className='sm:mb-3'>Purchase Guide</li></Link>
                     </ul>
                 </section>
 
