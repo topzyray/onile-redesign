@@ -29,7 +29,7 @@ const Card = ({imageUrl, altText, title, location, size, price}) => {
                             <Image src="/assets/share.svg" alt='Share' width={24} height={24} className='' />
                         </span>
                         <span>
-                            <Image src="/assets/tick.svg" alt='Tick' width={24} height={24} className='' />
+                            <Image src="/assets/save_property.svg" alt='Tick' width={24} height={24} className='' />
                         </span>
                     </p>
                 </div>
