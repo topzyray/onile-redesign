@@ -43,7 +43,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center h-full w-full px-8 sm:px-16 lg:px-[8.44rem]">
         {/* Site Logo */}
         <Link href="/">
-          <Image src={logo} alt="Onile Logo" className="w-16 sm:w-20" />
+          <Image src={logo} alt="Onile Logo" className="w-16 sm:w-20" priority />
         </Link>
 
         {/* Navigation Links */}

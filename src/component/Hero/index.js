@@ -1,6 +1,7 @@
 "use client";
 
 import Image from 'next/image'
+import Link from 'next/link'
 import {useState} from 'react'
 
 const Hero = () => {
@@ -27,11 +28,11 @@ const Hero = () => {
             <p className="text-[#F2F4F7] text-[1.2rem] sm:text-[1.5rem] mb-[0.75rem]">Realize Your Homeownership Goals</p>
             <p className="lg:w-4/5 text-[#F2F4F7] text-[0.7rem] sm:text-[0.9rem] text-justify">Welcome to the world of exquisite real estate, where luxury meets lifestyle. Explore a curated collection of exceptional properties that redefine the art of living.</p>
             
-            <a href='#feature'>
+            <Link href='#feature' scroll={false}>
                 <button className="text-[#FFFFFF] text-[0.8rem] sm:text-[1rem] font-semibold px-[1.5rem] py-[0.6rem] my-[0.8rem] rounded-xl bg-[#FF7F50] hover:bg-orange-600 active:bg-orange-700 focus:outline-none focus:ring focus:ring-orange-300">
                     Explore Now
                 </button>
-            </a>
+            </Link>
             
             {/* Action Buttons */}
             <div className='bg-white rounded-t-xl h-[2.5rem] sm:h-[3rem] w-[14rem] flex mt-6'>

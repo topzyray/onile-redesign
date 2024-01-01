@@ -26,10 +26,10 @@ const Card = ({imageUrl, altText, title, location, size, price}) => {
                     <h4 className='text-[0.875rem] font-bold'>{price}</h4>
                     <p className='flex gap-1'>
                         <span>
-                            <Image src="/assets/share.svg" alt='Share' width={24} height={24} className='' />
+                            <Image src="/assets/share.svg" alt='Share' width={24} height={24} className='w-auto h-auto' />
                         </span>
                         <span>
-                            <Image src="/assets/save_property.svg" alt='Tick' width={24} height={24} className='' />
+                            <Image src="/assets/save_property.svg" alt='Tick' width={24} height={24} className='w-auto h-auto' />
                         </span>
                     </p>
                 </div>

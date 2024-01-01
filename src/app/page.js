@@ -6,7 +6,7 @@ import Stats from '@/component/Stats'
 
 export default function Home() {
   return (
-    <main className="scroll-smooth flex w-full min-h-screen flex-col items-center justify-between">
+    <main className="flex w-full min-h-screen flex-col items-center justify-between">
       <Hero />
       <Feature />
       <Services />
