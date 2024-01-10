@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "/public/assets/onile_light_ash.png";
-import user from "/public/assets/tope.png";
+import user from "/public/assets/mary.jpg";
 import avatar from "/public/assets/avatar-white.svg";
 import avatar_blue from "/public/assets/avatar-blue.svg";
 import saved_prop from "/public/assets/save_property.svg";
@@ -11,6 +11,7 @@ import history from "/public/assets/history.svg";
 import notification from "/public/assets/notification.svg";
 import calculator from "/public/assets/calculator.svg";
 import logout from "/public/assets/logout.svg";
+import { FaRegCircleUser } from "react-icons/fa6";
 
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";

@@ -16,10 +16,10 @@ const Feature = () => {
               <h1 className='text-[#344054] text-[1.5rem] md:text-[2rem] font-bold'>Featured Listing</h1>
           </section>
           <section className="flex flex-wrap justify-center gap-5">
-              <Card imageUrl={house1} altText="Image of Property 1" title="Modern 3 Bedroom Duplex" location="123, Olayinka Street, Ado Ekiti." size="2300 sq.ft" price="N 489,000" />
-              <Card imageUrl={house2} altText="Image of Property 2" title="Modern 4 Bedroom Duplex" location="47, Bamisile Avenue, Ikere Ekiti." size="5045 sq.ft" price="N 420,900" />
-              <Card imageUrl={house3} altText="Image of Property 3" title="Modern 3 Bedroom Flat" location="222, Akinloye Close, Are Ekiti." size="1500 sq.ft" price="N 350,500" />
-              <Card imageUrl={house4} altText="Image of Property 4" title="Modern 2 Bedroom Bungalow" location="22, Paul and Joshua Lane, Ado Ekiti" size="4300 sq.ft" price="N 600,000" />
+              <Card imageUrl={house1} altText="Image of Property 1" title="Modern 3 Bedroom Duplex" location="123, Olayinka Street, Ado Ekiti." size="2300 sq.ft" price="489,000" />
+              <Card imageUrl={house2} altText="Image of Property 2" title="Modern 4 Bedroom Duplex" location="47, Bamisile Avenue, Ikere Ekiti." size="5045 sq.ft" price="420,900" />
+              <Card imageUrl={house3} altText="Image of Property 3" title="Modern 3 Bedroom Flat" location="222, Akinloye Close, Are Ekiti." size="1500 sq.ft" price="350,500" />
+              <Card imageUrl={house4} altText="Image of Property 4" title="Modern 2 Bedroom Bungalow" location="22, Paul and Joshua Lane, Ado Ekiti" size="4300 sq.ft" price="600,000" />
           </section>
       </section>
     </section>
