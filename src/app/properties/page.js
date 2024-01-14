@@ -8,6 +8,7 @@ import house2 from "/public/assets/house2.jpg";
 import house3 from "/public/assets/house11.jpg";
 import house4 from "/public/assets/house4.jpg";
 import { CgAdd } from "react-icons/cg";
+import Footer from "@/component/Footer";
 
 const Properties = () => {
   const [searchProperty, setSearchProperty] = useState("");
@@ -259,6 +260,7 @@ const Properties = () => {
           </section>
         </section>
       </section>
+      <Footer />
     </>
   );
 };

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import media from '/public/assets/media_upload.svg'
-
+import Footer from "@/component/Footer";
 
 const AddProperty = () => {
     return <>
@@ -214,6 +214,9 @@ const AddProperty = () => {
             </section>
             {/* Add property forms end */}
         </section>
+
+
+        <Footer />
     </>
   }
   

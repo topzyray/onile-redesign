@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         <GlobalState>
           <Navbar />
           <main>{children}</main>
-          <Footer />
+          {/* <Footer /> */}
         </GlobalState>
       </body>
     </html>

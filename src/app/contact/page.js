@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import phone from "/public/assets/icons_phone.svg";
 import mail from "/public/assets/icon_mail.svg";
+import Footer from "@/component/Footer";
 
 const Contact = () => {
   const [contact, setContact] = useState({
@@ -148,6 +149,8 @@ const Contact = () => {
           </section>
         </section>
       </section>
+
+      <Footer />
     </>
   );
 };
