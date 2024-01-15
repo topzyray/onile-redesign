@@ -33,8 +33,8 @@ const Registration = () => {
 
   return (
     <>
-      <div className="overscroll-none flex min-h-full w-full flex-1 flex-col sm:flex-row justify-center pt-0 md:pt-[6.5rem]">
-        <div
+      <section className="overscroll-none flex min-h-full w-full flex-1 flex-col sm:flex-row justify-center pt-0 md:pt-[6.5rem]">
+        <section
           className="hidden md:flex pt-[19rem] pl-[3rem] lg:pt-[19rem] lg:pl-[8.25rem] w-1/2 h-screen"
           style={{
             backgroundImage: `url('/assets/auth_bg_img.jpeg')`,
@@ -43,28 +43,28 @@ const Registration = () => {
             filter: "brightness(70%) grayscale(10%)",
           }}
         >
-          <div className="text-white flex flex-col gap-1">
+          <section className="text-white flex flex-col gap-1">
             <h2 className="text-4xl lg:text-5xl font-bold text-white">Onile</h2>
             <p className="text-base lg:text-xl font-medium">
               Bringing Homes and Hearts Together.
             </p>
-          </div>
-        </div>
+          </section>
+        </section>
 
         {/* Form section */}
-        <div className="sm:w-1/2 h-screen flex justify-center items-center">
-          <div className="border-2 rounded-2xl px-10 py-8 mx-2 md:mx-0">
-            <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+        <section className="sm:w-1/2 h-screen flex justify-center items-center">
+          <section className="border-2 rounded-2xl px-10 py-8 mx-2 md:mx-0">
+            <section className="sm:mx-auto sm:w-full sm:max-w-sm">
               <h2 className="text-center text-[#344054] text-2xl font-semibold leading-[1.65rem] tracking-tight">
                 Sign Up
               </h2>
-            </div>
+            </section>
 
-            <div className="mt-4 sm:mx-auto sm:w-full sm:max-w-sm">
-              <div className="space-y-4">
+            <section className="mt-4 sm:mx-auto sm:w-full sm:max-w-sm">
+              <section className="space-y-4">
 
-                <div>
-                  <div className="mt-2">
+                <section>
+                  <section className="mt-2">
                     <input
                       name="name"
                       type="text"
@@ -75,11 +75,11 @@ const Registration = () => {
                       required
                       className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-200 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-500 sm:text-sm sm:leading-6"
                     />
-                  </div>
-                </div>
+                  </section>
+                </section>
 
-                <div>
-                  <div className="mt-2">
+                <section>
+                  <section className="mt-2">
                     <input
                       name="email"
                       type="email"
@@ -90,11 +90,11 @@ const Registration = () => {
                       required
                       className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-200 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-500 sm:text-sm sm:leading-6"
                     />
-                  </div>
-                </div>
+                  </section>
+                </section>
 
-                <div>
-                  <div className="mt-2 flex items-center">
+                <section>
+                  <section className="mt-2 flex items-center">
                     <input
                       name="password"
                       type={passwordVisible ? "text" : "password"}
@@ -120,11 +120,11 @@ const Registration = () => {
                         <FaEye />
                       </span>
                     )}
-                  </div>
-                </div>
+                  </section>
+                </section>
 
-                <div>
-                  <div className="mt-2 flex items-center">
+                <section>
+                  <section className="mt-2 flex items-center">
                     <input
                       name="confirm_password"
                       type={confirmPasswordVisible ? "text" : "password"}
@@ -150,11 +150,11 @@ const Registration = () => {
                         <FaEye />
                       </span>
                     )}
-                  </div>
-                </div>
+                  </section>
+                </section>
 
-                <div>
-                  <div className="mt-2">
+                <section>
+                  <section className="mt-2">
                     <input
                       name="phone"
                       type="text"
@@ -165,10 +165,10 @@ const Registration = () => {
                       required
                       className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-200 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-500 sm:text-sm sm:leading-6"
                     />
-                  </div>
-                </div>
+                  </section>
+                </section>
 
-                <div>
+                <section>
                   <button
                     type="submit"
                     onClick={handleSubmit}
@@ -176,9 +176,9 @@ const Registration = () => {
                   >
                     Sign up
                   </button>
-                </div>
+                </section>
 
-                <div>
+                <section>
                   <button
                     type="submit"
                     className="flex w-full justify-evenly items-center rounded-md border-2 px-3 py-1.5 text-sm font-semibold leading-6 text-[#344054] shadow-sm hover:bg-[#CECECEEE] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#fc6832]"
@@ -219,8 +219,8 @@ const Registration = () => {
                     </span>
                     <span>Sign up with Google</span>
                   </button>
-                </div>
-              </div>
+                </section>
+              </section>
 
               <p className="mt-6 text-center text-sm font-normal text-gray-500">
                 Already have an account,{" "}
@@ -232,10 +232,10 @@ const Registration = () => {
                 </Link>{" "}
                 now.
               </p>
-            </div>
-          </div>
-        </div>
-      </div>
+            </section>
+          </section>
+        </section>
+      </section>
     </>
   );
 };
