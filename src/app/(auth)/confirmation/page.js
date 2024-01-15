@@ -20,7 +20,7 @@ const Confirmation = () => {
                     type="submit"
                     className="flex w-full justify-center rounded-md bg-[#FF7F50] px-3 py-1.5 text-sm font-bold leading-6 text-white shadow-sm hover:bg-[#fc6832] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#fc6832]"
                   >
-                    Verify
+                    Proceed to dashboard
                   </button>
                 </section>
             </section>
