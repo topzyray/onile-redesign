@@ -167,7 +167,7 @@ const Navbar = () => {
               <span className="focus:border-[#FF7F50]">
                 <VscAccount className="w-5 h-5" />
               </span>
-              <span className="text-sm" onClick={() => setMenuOpen(false)}>
+              <span className="text-xs" onClick={() => setMenuOpen(false)}>
                 Sign Up/Sign In
               </span>
             </Link>
