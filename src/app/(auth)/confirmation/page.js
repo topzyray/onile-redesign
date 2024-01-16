@@ -6,7 +6,7 @@ const Confirmation = () => {
         <section className="scroll-smooth pt-[6.5rem] sm:pt-32 pb-16 flex w-full min-h-screen flex-col items-center">
             <section className="w-auto h-auto flex flex-col justify-center items-center mt-4 space-y-8">
                 <section className="mx-8 px-8 sm:mx-auto w-full">
-                    <h2 className="text-justify sm:text-center text-[#344054] text-2xl font-normal leading-[1.65rem] tracking-tight">
+                    <h2 className="text-justify sm:text-center text-[#344054] text-lg sm:text-xl md:text-2xl font-normal leading-[1.65rem] tracking-tight">
                         Congratulations! Your account has been successfully verified. Start exploring now by clicking below and diving into your dashboard.
                     </h2>
                 </section>
