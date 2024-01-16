@@ -7,8 +7,8 @@ import house1 from "/public/assets/house7.jpg";
 import house2 from "/public/assets/house2.jpg";
 import house3 from "/public/assets/house11.jpg";
 import house4 from "/public/assets/house4.jpg";
-import { CgAdd } from "react-icons/cg";
 import Footer from "@/component/Footer";
+import { CgAdd } from "react-icons/cg";
 
 const Properties = () => {
   const [searchProperty, setSearchProperty] = useState("");
@@ -27,35 +27,35 @@ const Properties = () => {
       <section className="pt-20 sm:pt-[6.5rem] flex w-full min-h-screen flex-col items-center justify-between">
         <section className="w-full flex flex-col">
           {/* Search field on top */}
-          <section className="bg-[#F3F4F5] w-full py-8">
-            <section className="flex justify-center gap-1">
+          <section className="bg-[#F3F4F5] w-full py-8 px-8 lg:px-[21.78rem]">
+            <section className="flex justify-center gap-1 h-10">
               <section className="shrink-0">
                 <input
                   type="search"
                   name="search"
                   value={searchProperty}
                   onChange={handleChange}
-                  id="search"
                   placeholder="Looking for anything"
-                  autoComplete="address-level2"
-                  className="block w-[13rem] sm:w-[20rem] md:w-[30rem] lg:w-[40.3125rem] rounded-l-md border-0 py-1 md:py-1.5 text-gray-900 ring-1 ring-inset ring-gray-400 placeholder:text-gray-400 placeholder:pl-2 placeholder:font-normal placeholder:text-sm focus:ring-2 focus:ring-inset focus:ring-[#FF7F50] sm:text-sm sm:leading-6 shadow-md"
+                  autoComplete="search"
+                  className="block w-[13rem] sm:w-[20rem] md:w-[30rem] lg:w-[40.3125rem] h-full rounded-l-md border-0 py-1 md:py-1.5 text-[#34405480] ring-1 ring-inset ring-[#BDBDBD] placeholder:text-[#BDBDBD] placeholder:font-normal placeholder:text-sm focus:ring-2 focus:ring-inset focus:ring-[#FF7F50] sm:text-sm sm:leading-6 shadow-md"
+                  style={{boxShadow: "2px 2px 2px 0px #1d293940"}}
                 />
               </section>
-              <button onClick={handleSubmit} className="shrink-0 font-normal sm:font-semibold text-sm md:py-2 px-3 rounded-r-md text-[#FFFFFF] bg-[#FF7F50] hover:bg-orange-600 active:bg-orange-700 focus:outline-none focus:ring focus:ring-orange-300">
+              <button onClick={handleSubmit} className="h-full shrink-0 font-normal sm:font-semibold text-sm md:py-2 px-2 rounded-r-md text-[#FFFFFF] bg-[#FF7F50] hover:bg-orange-600 active:bg-orange-700 focus:outline-none focus:ring focus:ring-orange-300" style={{boxShadow: "2px 2px 2px 0px #1d293940"}}>
                 Search
               </button>
             </section>
           </section>
 
           {/* Purchase guide and Sell */}
-          <section className="flex justify-center md:gap-2 h-[8rem] md:h-[10.375rem] px-2 sm:px-4 md:px-8">
+          <section className="flex justify-center md:gap-2 w-full h-[8rem] md:h-[10.375rem] px-8 sm:px-16 lg:px-[8.44rem]">
             <section
               style={{
                 backgroundImage: `url('/assets/bg_property_guide.png')`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
-              className="w-[56.25rem] flex flex-col justify-center pl-0 md:pl-[4.37rem] rounded-l-md md:rounded-l-2xl"
+              className="w-full flex flex-col justify-center pl-0 md:pl-[4.37rem] rounded-l-md md:rounded-l-2xl"
             >
               <h1 className="text-[#F2F4F7] text-[1.5rem] md:text-[2.5rem] text-center md:text-left font-semibold">
                 How to buy on Onile
@@ -67,25 +67,23 @@ const Properties = () => {
                 Click Here
               </Link>
             </section>
-            <section className="bg-[#00B3D1] text-center text-[#F2F4F7] w-[19rem] sm:w-[16.375rem] rounded-r-md md:rounded-r-2xl py-1 md:py-4 inline-flex flex-col justify-center content-center">
-              <p className="text-sm sm:text-base md:text-lg lg:text-2xl font-bold">
+            <section className="bg-[#00B3D1] text-center text-[#F2F4F7] w-[17rem] sm:w-[20rem] rounded-r-md md:rounded-r-2xl py-1 px-1 sm:py-4 sm:px-4 md:py-6 md:px-6 inline-flex flex-col justify-center content-center">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold">
                 Ready to sell your property?
               </p>
               <div>
-                <Link href="/addproperty" className="">
-                  <p className="w-6 h-6 md:w-8 md:h-8 md:my-1 text-center md:text-3xl rounded-full inline-flex flex-col justify-center content-center hover:shadow-lg hover:text-white hover:bg-gray-400">
-                    <CgAdd />
-                  </p>
+                <Link href="/addproperty" className="flex justify-center items-center">
+                  <CgAdd className="w-8 h-8 md:w-10 md:h-10 md:my-1 text-center hover:shadow-lg hover:shadow-white hover:text-[#00B3D1] hover:bg-[#F2F4F7] hover:rounded-lg" />
                 </Link>
               </div>
               <p className="text-xs sm:text-base font-normal">
-                List your property today !
+                List your property today!
               </p>
             </section>
           </section>
 
           {/* Available properties */}
-          <section className="py-8 xl:px-[6rem]">
+          <section className="w-full px-8 sm:px-16 lg:px-[8.44rem] py-8">
             <section className="flex flex-wrap justify-center gap-5">
               <Card
                 imageUrl={house1}
