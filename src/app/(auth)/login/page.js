@@ -41,7 +41,7 @@ const Login = () => {
 
         {/* Form section */}
         <section className="sm:w-1/2 h-screen flex justify-center items-center">
-          <section className="border-2 rounded-2xl px-10 py-8 mx-2 md:mx-0">
+          <section className="border-2 rounded-2xl px-10 py-8 mx-2 md:mx-0 max-w-md">
             <section className="sm:mx-auto sm:w-full sm:max-w-sm">
               <h2 className="text-center text-[#344054] text-2xl font-semibold leading-[1.65rem] tracking-tight">
                 Sign In

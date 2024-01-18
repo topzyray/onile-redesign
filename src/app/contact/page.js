@@ -31,7 +31,7 @@ const Contact = () => {
 
   return (
     <>
-      <section className="scroll-smooth pt-[6.5rem] sm:pt-36 pb-16 lg:pb-0 flex w-full min-h-screen flex-col items-center">
+      <section className="scroll-smooth pt-[6.5rem] sm:pt-32 pb-16 lg:pb-0 flex w-full min-h-screen flex-col items-center">
         <section className="text-center text-[#344054]">
           <h1 className="text-[1.5rem] lg:text-[2rem] font-bold">Contact Us</h1>
         </section>

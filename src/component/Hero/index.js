@@ -51,19 +51,19 @@ const Hero = () => {
                 <div className="grid grid-cols-[repeat(3, minmax(0, 1fr))_2.5rem] gap-2">
                     <div className="xl:col-span-1 xl:col-start-1 flex">
                         <div className="w-full">
-                            <input type="text" name="location" id="location" placeholder="Location" autoComplete="address-level2" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-400 placeholder:text-gray-400 placeholder:pl-2 focus:ring-2 focus:ring-inset focus:ring-[#FF7F50] sm:text-sm sm:leading-6" />
+                            <input type="text" name="location" id="location" placeholder="Location" autoComplete="address-level2" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-400 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#FF7F50] sm:text-sm sm:leading-6" />
                         </div>
                         <Image src="/assets/location.svg" alt='location' width={16} height={16} className='-ml-6 mt-1' />
                     </div>
                     <div className="xl:col-span-1 xl:col-start-2 flex">
                         <div className="w-full">
-                            <input type="text" name="property_type" id="property_type" placeholder="Property Type" autoComplete="address-level2" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-400 placeholder:text-gray-400 placeholder:pl-2 focus:ring-2 focus:ring-inset focus:ring-[#FF7F50] sm:text-sm sm:leading-6" />
+                            <input type="text" name="property_type" id="property_type" placeholder="Property Type" autoComplete="address-level2" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-400 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#FF7F50] sm:text-sm sm:leading-6" />
                         </div>
                         <Image src="/assets/property.svg" alt='property_type' width={16} height={16} className='-ml-6 mt-1' />
                     </div>
                     <div className="xl:col-span-1 xl:col-start-3 flex">
                         <div className="w-full">
-                            <input type="text" name="price_range" id="price_range" placeholder="Price Range" autoComplete="address-level2" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-400 placeholder:text-gray-400 placeholder:pl-2 focus:ring-2 focus:ring-inset focus:ring-[#FF7F50] sm:text-sm sm:leading-6" />
+                            <input type="text" name="price_range" id="price_range" placeholder="Price Range" autoComplete="address-level2" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-400 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#FF7F50] sm:text-sm sm:leading-6" />
                         </div>
                         <Image src="/assets/price.svg" alt='price_range' width={16} height={16} className='-ml-6 mt-1' />
                     </div>
@@ -79,19 +79,19 @@ const Hero = () => {
                 <div className="grid grid-cols-[repeat(3, minmax(0, 1fr))_2.5rem] gap-2">
                     <div className="xl:col-span-1 xl:col-start-1 flex">
                         <div className="w-full">
-                            <input type="text" name="location" id="location" placeholder="Location" autoComplete="address-level2" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-orange-300 placeholder:text-gray-400 placeholder:pl-2 focus:ring-2 focus:ring-inset focus:ring-[#FF7F50] sm:text-sm sm:leading-6" />
+                            <input type="text" name="location" id="location" placeholder="Location" autoComplete="address-level2" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-orange-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#FF7F50] sm:text-sm sm:leading-6" />
                         </div>
                         <Image src="/assets/location.svg" alt='location' width={16} height={16} className='-ml-6 mt-1' />
                     </div>
                     <div className="xl:col-span-1 xl:col-start-2 flex">
                         <div className="w-full">
-                            <input type="text" name="property_type" id="property_type" placeholder="Property Type" autoComplete="address-level2" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-orange-300 placeholder:text-gray-400 placeholder:pl-2 focus:ring-2 focus:ring-inset focus:ring-[#FF7F50] sm:text-sm sm:leading-6" />
+                            <input type="text" name="property_type" id="property_type" placeholder="Property Type" autoComplete="address-level2" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-orange-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#FF7F50] sm:text-sm sm:leading-6" />
                         </div>
                         <Image src="/assets/property.svg" alt='property_type' width={16} height={16} className='-ml-6 mt-1' />
                     </div>
                     <div className="xl:col-span-1 xl:col-start-3 flex">
                         <div className="w-full">
-                            <input type="text" name="price_range" id="price_range" placeholder="Price Range" autoComplete="address-level2" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-orange-300 placeholder:text-gray-400 placeholder:pl-2 focus:ring-2 focus:ring-inset focus:ring-[#FF7F50] sm:text-sm sm:leading-6" />
+                            <input type="text" name="price_range" id="price_range" placeholder="Price Range" autoComplete="address-level2" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-orange-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#FF7F50] sm:text-sm sm:leading-6" />
                         </div>
                         <Image src="/assets/price.svg" alt='price_range' width={16} height={16} className='-ml-6 mt-1' />
                     </div>
