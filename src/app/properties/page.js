@@ -41,7 +41,7 @@ const Properties = () => {
                   style={{boxShadow: "2px 2px 2px 0px #1d293940"}}
                 />
               </section>
-              <button onClick={handleSubmit} className="h-full shrink-0 font-normal sm:font-semibold text-sm md:py-2 px-2 rounded-r-md text-[#FFFFFF] bg-[#FF7F50] hover:bg-orange-600 active:bg-orange-700 focus:outline-none focus:ring focus:ring-orange-300" style={{boxShadow: "2px 2px 2px 0px #1d293940"}}>
+              <button onClick={handleSubmit} className="h-full shrink-0 font-normal sm:font-semibold text-sm md:py-2 px-6 rounded-r-md text-[#FFFFFF] bg-[#FF7F50] hover:bg-orange-600 active:bg-orange-700 focus:outline-none focus:ring focus:ring-orange-300" style={{boxShadow: "2px 2px 2px 0px #1d293940"}}>
                 Search
               </button>
             </section>
