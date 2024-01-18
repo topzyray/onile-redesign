@@ -1,8 +1,12 @@
 "use client";
 
-import Image from 'next/image'
-import Link from 'next/link'
-import {useState} from 'react'
+import {useState} from 'react';
+import Link from 'next/link';
+
+import { IoLocationOutline } from "react-icons/io5";
+import { BiBuildingHouse } from "react-icons/bi";
+import { TbCurrencyNaira } from "react-icons/tb";
+import { FaSearch } from "react-icons/fa";
 
 const Hero = () => {
     const [toggle, setToggle] = useState(true);
@@ -28,11 +32,11 @@ const Hero = () => {
             <p className="text-[#F2F4F7] text-[1.2rem] sm:text-[1.5rem] mb-[0.75rem]">Realize Your Homeownership Goals</p>
             <p className="lg:w-4/5 text-[#F2F4F7] text-[0.7rem] sm:text-[0.9rem] text-justify">Welcome to the world of exquisite real estate, where luxury meets lifestyle. Explore a curated collection of exceptional properties that redefine the art of living.</p>
             
-            <Link href='#feature' scroll={false}>
+            <a href='#feature'>
                 <button className="text-[#FFFFFF] text-[0.8rem] sm:text-[1rem] font-semibold px-[1.5rem] py-[0.6rem] my-[0.8rem] rounded-xl bg-[#FF7F50] hover:bg-orange-600 active:bg-orange-700 focus:outline-none focus:ring focus:ring-orange-300">
                     Explore Now
                 </button>
-            </Link>
+            </a>
             
             {/* Action Buttons */}
             <div className='bg-white rounded-t-xl h-[2.5rem] sm:h-[3rem] w-[14rem] flex mt-6'>
@@ -53,23 +57,23 @@ const Hero = () => {
                         <div className="w-full">
                             <input type="text" name="location" id="location" placeholder="Location" autoComplete="address-level2" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-400 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#FF7F50] sm:text-sm sm:leading-6" />
                         </div>
-                        <Image src="/assets/location.svg" alt='location' width={16} height={16} className='-ml-6 mt-1' />
+                        <IoLocationOutline className='-ml-7 mt-2 w-5 h-5' />
                     </div>
                     <div className="xl:col-span-1 xl:col-start-2 flex">
                         <div className="w-full">
                             <input type="text" name="property_type" id="property_type" placeholder="Property Type" autoComplete="address-level2" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-400 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#FF7F50] sm:text-sm sm:leading-6" />
                         </div>
-                        <Image src="/assets/property.svg" alt='property_type' width={16} height={16} className='-ml-6 mt-1' />
+                        <BiBuildingHouse className='-ml-7 mt-2 w-5 h-5' />
                     </div>
                     <div className="xl:col-span-1 xl:col-start-3 flex">
                         <div className="w-full">
                             <input type="text" name="price_range" id="price_range" placeholder="Price Range" autoComplete="address-level2" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-400 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#FF7F50] sm:text-sm sm:leading-6" />
                         </div>
-                        <Image src="/assets/price.svg" alt='price_range' width={16} height={16} className='-ml-6 mt-1' />
+                        <TbCurrencyNaira className='-ml-7 mt-2 w-5 h-5' />
                     </div>
                     <button className="xl:col-[2.5rem] xl:col-start-4 h-[2.28rem] text-[#FFFFFF] rounded-md xl:rounded-r-xl xl:rounded-l-none bg-[#FF7F50] hover:bg-orange-600 active:bg-orange-700 focus:outline-none focus:ring focus:ring-orange-300">
                         <div className='flex justify-center'>
-                            <Image src="/assets/search.svg" alt='Search' width={16} height={16} />
+                            <FaSearch className='w-4 h-4' />
                         </div>
                     </button>
                 </div>
@@ -81,23 +85,23 @@ const Hero = () => {
                         <div className="w-full">
                             <input type="text" name="location" id="location" placeholder="Location" autoComplete="address-level2" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-orange-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#FF7F50] sm:text-sm sm:leading-6" />
                         </div>
-                        <Image src="/assets/location.svg" alt='location' width={16} height={16} className='-ml-6 mt-1' />
+                        <IoLocationOutline className='-ml-7 mt-2 w-5 h-5' />
                     </div>
                     <div className="xl:col-span-1 xl:col-start-2 flex">
                         <div className="w-full">
                             <input type="text" name="property_type" id="property_type" placeholder="Property Type" autoComplete="address-level2" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-orange-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#FF7F50] sm:text-sm sm:leading-6" />
                         </div>
-                        <Image src="/assets/property.svg" alt='property_type' width={16} height={16} className='-ml-6 mt-1' />
+                        <BiBuildingHouse className='-ml-7 mt-2 w-5 h-5' />
                     </div>
                     <div className="xl:col-span-1 xl:col-start-3 flex">
                         <div className="w-full">
                             <input type="text" name="price_range" id="price_range" placeholder="Price Range" autoComplete="address-level2" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-orange-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#FF7F50] sm:text-sm sm:leading-6" />
                         </div>
-                        <Image src="/assets/price.svg" alt='price_range' width={16} height={16} className='-ml-6 mt-1' />
+                        <TbCurrencyNaira className='-ml-7 mt-2 w-5 h-5' />
                     </div>
                     <button className="xl:col-[2.5rem] xl:col-start-4 h-[2.28rem] text-[#FFFFFF] rounded-md xl:rounded-r-xl xl:rounded-l-none bg-[#FF7F50] hover:bg-orange-600 active:bg-orange-700 focus:outline-none focus:ring focus:ring-orange-300">
                         <div className='flex justify-center'>
-                            <Image src="/assets/search.svg" alt='Search' width={16} height={16} />
+                            <FaSearch className='w-4 h-4' />
                         </div>
                     </button>
                 </div>

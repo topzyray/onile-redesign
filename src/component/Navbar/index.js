@@ -1,21 +1,19 @@
 "use client";
 
+import { useState } from "react";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "/public/assets/onile_light_ash.png";
 import user from "/public/assets/mary.jpg";
-import avatar_blue from "/public/assets/avatar-blue.svg";
-import saved_prop from "/public/assets/save_property.svg";
-import history from "/public/assets/history.svg";
-import notification from "/public/assets/notification.svg";
-import calculator from "/public/assets/calculator.svg";
-import logout from "/public/assets/logout.svg";
-import { VscAccount } from "react-icons/vsc";
-import { FaRegCircleUser } from "react-icons/fa6";
-
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { useState } from "react";
-import { usePathname } from "next/navigation";
+import { GoPerson } from "react-icons/go";
+import { MdOutlineSell } from "react-icons/md";
+import { CiBookmarkCheck } from "react-icons/ci";
+import { RiHistoryLine } from "react-icons/ri";
+import { IoNotificationsOutline } from "react-icons/io5";
+import { CiCalculator1 } from "react-icons/ci";
+import { RiLogoutBoxLine } from "react-icons/ri";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -26,7 +24,7 @@ const navLinks = [
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
   const [userMenu, setUserMenu] = useState(false);
   const [userMenuLarge, setUserMenuLarge] = useState(false);
 
@@ -89,7 +87,7 @@ const Navbar = () => {
               }  flex flex-col justify-center items-center font-normal`}
             >
               <span >
-                <VscAccount className="w-6 h-6"/>
+                <GoPerson className="w-6 h-6"/>
               </span>
               <span className="p-1">Sign Up/Sign In</span>
             </Link>
@@ -165,7 +163,7 @@ const Navbar = () => {
               }  flex flex-col justify-center items-center font-normal`}
             >
               <span className="focus:border-[#FF7F50]">
-                <VscAccount className="w-5 h-5" />
+                <GoPerson className="w-5 h-5" />
               </span>
               <span className="text-xs" onClick={() => setMenuOpen(false)}>
                 Sign Up/Sign In
@@ -192,13 +190,22 @@ const Navbar = () => {
               }
             >
               <li className="flex items-center gap-1.5">
-                <Image
-                  src={avatar_blue}
-                  alt="Personal details"
-                  width={20}
-                  height={20}
-                />
+                <GoPerson className="w-5 h-5" />
                 <span>Personal Details</span>
+              </li>
+            </Link>
+
+            <Link
+              href="/sell_property"
+              className={
+                pathname === "/sell_property"
+                  ? "text-[#FF7F50]"
+                  : "hover:underline hover:font-bold"
+              }
+            >
+              <li className="flex items-center gap-1.5">
+                <MdOutlineSell className="w-5 h-5" />
+                <span>Sell Porperty</span>
               </li>
             </Link>
 
@@ -211,12 +218,7 @@ const Navbar = () => {
               }
             >
               <li className="flex items-center gap-1.5">
-                <Image
-                  src={saved_prop}
-                  alt="Personal details"
-                  width={20}
-                  height={20}
-                />
+                <CiBookmarkCheck className="w-5 h-5" />
                 <span>Saved Properties</span>
               </li>
             </Link>
@@ -230,12 +232,7 @@ const Navbar = () => {
               }
             >
               <li className="flex items-center gap-1.5">
-                <Image
-                  src={history}
-                  alt="Personal details"
-                  width={20}
-                  height={20}
-                />
+                <RiHistoryLine className="w-5 h-5" />
                 <span>Search History</span>
               </li>
             </Link>
@@ -249,12 +246,7 @@ const Navbar = () => {
               }
             >
               <li className="flex items-center gap-1.5">
-                <Image
-                  src={notification}
-                  alt="Personal details"
-                  width={20}
-                  height={20}
-                />
+                <IoNotificationsOutline className="w-5 h-5" />
                 <span>Notification</span>
               </li>
             </Link>
@@ -268,12 +260,7 @@ const Navbar = () => {
               }
             >
               <li className="flex items-center gap-1.5">
-                <Image
-                  src={calculator}
-                  alt="Personal details"
-                  width={20}
-                  height={20}
-                />
+                <CiCalculator1 className="w-5 h-5" />
                 <span>Mortgage Calculator</span>
               </li>
             </Link>
@@ -290,12 +277,7 @@ const Navbar = () => {
               }
             >
               <li className="flex items-center gap-1.5">
-                <Image
-                  src={logout}
-                  alt="Personal details"
-                  width={20}
-                  height={20}
-                />
+                <RiLogoutBoxLine className="w-5 h-5 text-[#FF7F50]" />
                 <span className="text-[#FF7F50] hover:underline hover:font-semibold">Logout</span>
               </li>
             </Link>
@@ -314,13 +296,22 @@ const Navbar = () => {
               }
             >
               <li className="flex items-center gap-1.5">
-                <Image
-                  src={avatar_blue}
-                  alt="Personal details"
-                  width={20}
-                  height={20}
-                />
+                <GoPerson className="w-5 h-5" />
                 <span>Personal Details</span>
+              </li>
+            </Link>
+
+            <Link
+              href="/sell_property"
+              className={
+                pathname === "/sell_property"
+                  ? "text-[#FF7F50]"
+                  : "hover:underline hover:font-bold"
+              }
+            >
+              <li className="flex items-center gap-1.5">
+                <MdOutlineSell className="w-5 h-5" />
+                <span>Sell Property</span>
               </li>
             </Link>
 
@@ -333,12 +324,7 @@ const Navbar = () => {
               }
             >
               <li className="flex items-center gap-1.5">
-                <Image
-                  src={saved_prop}
-                  alt="Personal details"
-                  width={20}
-                  height={20}
-                />
+                <CiBookmarkCheck className="w-5 h-5" />
                 <span>Saved Properties</span>
               </li>
             </Link>
@@ -352,12 +338,7 @@ const Navbar = () => {
               }
             >
               <li className="flex items-center gap-1.5">
-                <Image
-                  src={history}
-                  alt="Personal details"
-                  width={20}
-                  height={20}
-                />
+                <RiHistoryLine className="w-5 h-5" />
                 <span>Search History</span>
               </li>
             </Link>
@@ -371,12 +352,7 @@ const Navbar = () => {
               }
             >
               <li className="flex items-center gap-1.5">
-                <Image
-                  src={notification}
-                  alt="Personal details"
-                  width={20}
-                  height={20}
-                />
+                <IoNotificationsOutline className="w-5 h-5" />
                 <span>Notification</span>
               </li>
             </Link>
@@ -390,12 +366,7 @@ const Navbar = () => {
               }
             >
               <li className="flex items-center gap-1.5">
-                <Image
-                  src={calculator}
-                  alt="Personal details"
-                  width={20}
-                  height={20}
-                />
+                <CiCalculator1 className="w-5 h-5" />
                 <span>Mortgage Calculator</span>
               </li>
             </Link>
@@ -410,12 +381,7 @@ const Navbar = () => {
               onClick={(() => setIsLoggedIn(false)) && handleNav}
             >
               <li className="flex items-center gap-1.5">
-                <Image
-                  src={logout}
-                  alt="Personal details"
-                  width={20}
-                  height={20}
-                />
+                <RiLogoutBoxLine className="w-5 h-5 text-[#FF7F50]" />
                 <span className="text-[#FF7F50]">Logout</span>
               </li>
             </Link>
