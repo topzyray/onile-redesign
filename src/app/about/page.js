@@ -40,7 +40,7 @@ const AboutUs = () => {
           {/* What sets us apart */}
           <section className="w-full flex flex-col justify-center gap-4 items-center">
             <h3 className='text-base sm:text-2xl font-bold sm:font-semibold'>What Sets Us Apart</h3>
-            <ul>
+            <ul className="list-disc pl-6">
               <li className='text-justify md:text-[0.8rem] lg:text-[0.85rem] xl:text-[1rem] xxl:text-[1.5rem]'>Experience: Onile boasts a team of experienced professionals with in-depth knowledge of the local real estate landscape. With years of experience, we offer unparalleled insights into the market.</li>
               <li className='text-justify md:text-[0.8rem] lg:text-[0.85rem] xl:text-[1rem] xxl:text-[1.5rem]'>Customer-Centric Approach: Your satisfaction is at the core of our philosophy. We put your needs first, providing personalized services that cater to your preferences, desires, and lifestyle.</li>
               <li className='text-justify md:text-[0.8rem] lg:text-[0.85rem] xl:text-[1rem] xxl:text-[1.5rem]'>Innovation and Technology: We're constantly at the forefront of real estate technology and market trends. Our use of the latest tools and data analytics empowers us to deliver more efficient, effective, and enjoyable property transactions.</li>
