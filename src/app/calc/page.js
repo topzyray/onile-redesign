@@ -1,4 +1,4 @@
-
+import Map from "@/component/Map/Map"
 
 const MortgageCalculator = () => {
     return <>
@@ -6,6 +6,8 @@ const MortgageCalculator = () => {
             <section className="w-full flex flex-col sm:flex-row justify-between">
                 <h1 className="text-xl sm:text-3xl lg:text-5xl">Mortgage Calculator Page Under Development <br />  Please Check Back Later</h1>
             </section>
+
+            <Map />
         </section>
     </>
 }

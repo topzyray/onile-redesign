@@ -208,6 +208,58 @@ const AddProperty = () => {
                 </section>
                 {/* Media Upload Ends */}
 
+                {/* Pricing Begin */}
+                <section className='flex flex-col gap-4'>
+                    <section className=''>
+                        <h3 className='text-lg sm:xl lg:text-2xl font-bold'>Pricing</h3>
+                    </section>
+                    <section className='grid sm:grid-cols-8 gap-2 sm:gap-4'>
+
+                        <section className="col-start-1">
+                            <section className="mt-0">
+                                <input
+                                    type="text"
+                                    name="currency"
+                                    id="currency"
+                                    placeholder="NGN"
+                                    required
+                                    autoComplete="currency"
+                                    className="block w-full rounded-md border-0 py-2 md:py-2.5 text-[#344054] shadow-md ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#344054] text-sm sm:text-lg sm:leading-6"
+                                />
+                            </section>
+                        </section>
+
+                        <section className="col-start-2 col-end-9">
+                            <section className="mt-0">
+                                <input
+                                    type="text"
+                                    name="amount"
+                                    id="amount"
+                                    placeholder="Amount"
+                                    required
+                                    autoComplete="amount"
+                                    className="block w-full rounded-md border-0 py-2 md:py-2.5 text-[#344054] shadow-md ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#344054] text-sm sm:text-lg sm:leading-6"
+                                />
+                            </section>
+                        </section>
+
+                        <section className="col-span-full">
+                            <section className="mt-0">
+                                <input
+                                    type="text"
+                                    name="additional_costs"
+                                    id="additional_costs"
+                                    placeholder="Additional Costs"
+                                    required
+                                    autoComplete="additional_costs"
+                                    className="block w-full rounded-md border-0 py-2 md:py-2.5 text-[#344054] shadow-md ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#344054] text-sm sm:text-lg sm:leading-6"
+                                />
+                            </section>
+                        </section>
+                    </section>
+                </section>
+                {/* Pricing Ends */}
+
 
 
 

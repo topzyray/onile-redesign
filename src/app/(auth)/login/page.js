@@ -103,7 +103,7 @@ const Login = () => {
                       type="checkbox"
                       checked={checked}
                       onChange={handleChange}
-                      className=""
+                      className="accent-[#FF7F50]"
                     />
                     <label
                       htmlFor="check"

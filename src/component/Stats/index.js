@@ -2,7 +2,7 @@
 
 import { useRef } from 'react'
 import { useIsVisible } from '@/app/_lib/useIsVisible';
-
+import CountUp from 'react-countup'
 
 const Stats = () => {
 
@@ -26,16 +26,16 @@ const Stats = () => {
                 </section>
                 <section className="grid sm:grid-cols-4 gap-4 lg:gap-6 xl:gap-10">
                     <section ref={ref1} className={`text-center font-medium    transition-opacity ease-in duration-700 ${isVisible1 ? "opacity-100" : "opacity-0"}`}>
-                        <p className='text-sm sm:text-base md:text-lg lg:text-xl'>5 years + <br /> Experience</p>
+                        <p className='text-sm sm:text-base md:text-lg lg:text-xl'><CountUp start={1} end={5} duration={2} delay={0}>1</CountUp> years + <br /> Experience</p>
                     </section>
                     <section ref={ref2} className={`text-center font-medium    transition-opacity ease-in duration-700 ${isVisible2 ? "opacity-100" : "opacity-0"}`}>
-                        <p className='text-sm sm:text-base md:text-lg lg:text-xl'>2000+ <br /> Completed Projects</p>
+                        <p className='text-sm sm:text-base md:text-lg lg:text-xl'><CountUp start={1} end={2000} duration={2} delay={0}>1</CountUp>+ <br /> Completed Projects</p>
                     </section>
                     <section ref={ref3} className={`text-center font-medium    transition-opacity ease-in duration-700 ${isVisible3 ? "opacity-100" : "opacity-0"}`}>
-                        <p className='text-sm sm:text-base md:text-lg lg:text-xl'>259 <br /> Ongoing Projects</p>
+                        <p className='text-sm sm:text-base md:text-lg lg:text-xl'><CountUp start={1} end={259} duration={2} delay={0}>1</CountUp> <br /> Ongoing Projects</p>
                     </section>
                     <section ref={ref4} className={`text-center font-medium    transition-opacity ease-in duration-700 ${isVisible4 ? "opacity-100" : "opacity-0"}`}>
-                        <p className='text-sm sm:text-base md:text-lg lg:text-xl'>3000 + <br /> Happy Customers</p>
+                        <p className='text-sm sm:text-base md:text-lg lg:text-xl'><CountUp start={1} end={3000} duration={2} delay={0}>1</CountUp>+ <br /> Happy Customers</p>
                     </section>
                 </section>
             </section>

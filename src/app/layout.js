@@ -1,8 +1,7 @@
 import './globals.css'
 import { lato, roboto } from './_lib/fonts'
-import GlobalState from '@/context'
 import Navbar from '@/component/Navbar'
-import Footer from '@/component/Footer'
+import StoreProvider from './StoreProvider'
 
 export const metadata = {
   title: 'Onile',
@@ -13,11 +12,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <GlobalState>
-          <Navbar />
-          <main>{children}</main>
-          {/* <Footer /> */}
-        </GlobalState>
+        <StoreProvider>
+        <Navbar />
+        <main>{children}</main>
+        </StoreProvider>
       </body>
     </html>
   )

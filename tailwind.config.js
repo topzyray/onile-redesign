@@ -10,6 +10,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'home_hero': 'url("/assets/hero_bg.gif")',
+        'home_hero': 'url("/assets/hero_bg.gif")'
+      }
     },
   },
   plugins: [],
