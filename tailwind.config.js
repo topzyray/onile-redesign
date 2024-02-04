@@ -13,6 +13,17 @@ module.exports = {
       backgroundImage: {
         'home_hero': 'url("/assets/hero_bg.gif")',
         'home_hero': 'url("/assets/hero_bg.gif")'
+      },
+      colors: {
+        'light-orange': '#FF7F50',
+        'dark-orange': '#FC6832',
+        'dark-gray': '#344054',
+        'light-gray': '#344054B2',
+        'dark-blue': '#1D2939'
+      },
+      fontFamily: {
+        'roboto': ['Roboto', 'Lato', 'sans-serif'],
+        'lato': ['Lato', 'Roboto', 'sans-serif']
       }
     },
   },

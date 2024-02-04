@@ -1,11 +1,15 @@
 import Link from 'next/link'
-import Footer from "@/component/Footer";
-import { IoIosImages } from "react-icons/io";
+import Footer from "@/component/Footer"
+import { IoIosImages } from "react-icons/io"
+import { VscChevronLeft } from "react-icons/vsc"
 
 const AddProperty = () => {
     return <>
         <section className="scroll-smooth pt-[6.5rem] sm:pt-36 pb-0 flex w-full min-h-screen flex-col items-center mb-16">
-            <section className='text-center text-[#344054]'>
+            <section className='w-full relative text-center text-[#344054] flex items-center justify-center'>
+                <Link href="/properties" className="absolute left-8 sm:left-16 lg:left-[8.44rem]">
+                    <VscChevronLeft className="w-10 h-10 hover:text-[#fc6832] focus:text-[#fc6832]" />
+                </Link>
                 <h1 className='text-[1.5rem] lg:text-[2rem] font-bold text'>Post Ad</h1>
             </section>
 

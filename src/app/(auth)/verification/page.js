@@ -11,7 +11,7 @@ const Verification = () => {
       <section className="scroll-smooth pt-[6.5rem] sm:pt-32 pb-16 flex w-full min-h-screen flex-col items-center">
         <section className="w-full px-8 sm:px-16 lg:px-[9rem]">
            <Link href="/register">
-            <VscChevronLeft className="w-6 h-6 hover:text-[#fc6832] focus:text-[#fc6832]" />
+            <VscChevronLeft className="w-10 h-10 hover:text-[#fc6832] focus:text-[#fc6832]" />
            </Link> 
         </section>
         <section className="w-auto h-auto flex justify-center items-center mt-8 sm:mt-[6.31rem]">
@@ -32,18 +32,22 @@ const Verification = () => {
                     <section className="w-[13rem] h-10 mt-2 grid grid-cols-4 grid-rows-1 place-content-center gap-4">
                         <input
                         type="text"
+
                         className="block w-10 h-full rounded-md py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-200 focus:ring-2 focus:ring-inset focus:ring-gray-500 sm:text-sm sm:leading-6"
                         />
                         <input
                         type="text"
+
                         className="block w-10 h-full rounded-md py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-200 focus:ring-2 focus:ring-inset focus:ring-gray-500 sm:text-sm sm:leading-6"
                         />
                         <input
                         type="text"
+
                         className="block w-10 h-full rounded-md py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-200 focus:ring-2 focus:ring-inset focus:ring-gray-500 sm:text-sm sm:leading-6"
                         />
                         <input
                         type="text"
+
                         className="block w-10 h-full rounded-md py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-200 focus:ring-2 focus:ring-inset focus:ring-gray-500 sm:text-sm sm:leading-6"
                         />
                     </section>
