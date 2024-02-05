@@ -236,9 +236,9 @@ const PropertyDetails = ({ params }) => {
                 </section>
 
                 {/* View similar properties */}
-                <section className="">
+                <section className="w-full">
                     <h3 className="text-[1.5rem] text-dark-gray sm:text-[2rem] font-bold leading-6 md:leading-8 mb-3 sm:mb-4">View Similar Properties</h3>
-                    <section className="flex flex-wrap justify-center gap-5 border rounded-lg">
+                    <section className="w-full flex flex-wrap gap-2 rounded-lg">
                         <Card
                             imageUrl={house1}
                             altText="Image of Property 1"
@@ -271,6 +271,12 @@ const PropertyDetails = ({ params }) => {
                             size="4300 sq.ft"
                             price="600,000"
                         />
+
+                        <section className="hidden xxl:flex justify-self-end items-center ">
+                            <span className="flex justify-center items-center w-32 h-[21rem] rounded-xl shadow-xl border bg-white font-bold hover:bg-dark-orange hover:text-dark-gray focus:bg-dark-orange cursor-pointer">
+                                <VscChevronRight className="w-20 h-20" />
+                            </span>
+                        </section>
                     </section>
                 </section>
 
