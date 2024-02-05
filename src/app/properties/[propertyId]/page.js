@@ -2,6 +2,7 @@ import Footer from "@/component/Footer"
 import Link from 'next/link'
 import Image from 'next/image'
 import { VscChevronLeft } from 'react-icons/vsc'
+import { VscChevronRight } from 'react-icons/vsc'
 import { BsBookmarkCheck } from 'react-icons/bs'
 import { BsShare } from 'react-icons/bs'
 import { IoLocationOutline } from 'react-icons/io5'
@@ -34,7 +35,7 @@ const PropertyDetails = ({ params }) => {
                         <p className="flex items-center gap-2 font-normal text-sm sm:text-base leading-4"><span><IoLocationOutline className='text-light-orange w-6 h-6' /></span> 456 Adegbola Avenue, Fajuyi, Ekiti</p>
                         <p className="flex items-center gap-3 font-normal text-sm sm:text-base leading-4"><span className="flex items-center gap-2"><MdOutlineBed className='text-light-orange w-6 h-6' />Two Bedrooms</span> <span className="flex items-center gap-2"><MdOutlineBathtub className='text-light-orange w-6 h-6' />Two Bathrooms</span> <span className="flex items-center gap-2"><Image src={LandPlot} alt="Land plot icon" className='w-6 h-6' />43000 sq.ft</span></p>
                     </div>
-                    <div className="flex flex-col sm:items-end space-y-2 sm:space-y-4">
+                    <div className="flex flex-row sm:flex-col justify-between sm:justify-start sm:items-end space-y-2 sm:space-y-4">
                         <h3 className="text-light-orange text-[1.5rem] sm:text-[2rem] font-semibold leading-8">₦3,500,000</h3>
                         <p className='flex gap-6 text-dark-gray'>
                             <span><BsShare className='w-6 h-6 sm:w-8 sm:h-8' /></span>
@@ -44,8 +45,19 @@ const PropertyDetails = ({ params }) => {
                 </section>
 
                 {/* Property images carousel */}
-                <section className="h-[25rem] sm:h-[35rem] md:h-[40rem] lg:h-[49.9rem] rounded-xl bg-light-orange">
-                    Property Image Goes Here
+                <section
+                    // bg-[url('/assets/house7.jpg')] bg-cover bg-center
+                    className="relative flex justify-center items-center w-full h-[25rem] sm:h-[35rem] md:h-[40rem] xxl:h-[49.9rem] border-2 rounded-xl">
+                    <Image src={house1} alt="" className="absolute w-full h-full object-cover object-center opacity-50 rounded-xl" />
+                    <Image src={house1} alt="" className="absolute w-[70%] h-[75%] sm:w-[65%] sm:h-[70%] object-cover object-center opacity-100 rounded-xl" />
+                    <section className='absolute top-[50%] w-full flex justify-between px-2 sm:px-4 text-dark-gray'>
+                        <span className="flex justify-center items-center w-9 sm:w-10 h-10 rounded-xl shadow-xl border bg-white font-bold hover:bg-dark-orange hover:text-dark-gray focus:bg-dark-orange cursor-pointer">
+                            <VscChevronLeft className="w-8 h-8" />
+                        </span>
+                        <span className="flex justify-center items-center w-10 h-10 rounded-xl shadow-xl border bg-white font-bold hover:bg-dark-orange hover:text-dark-gray focus:bg-dark-orange cursor-pointer">
+                            <VscChevronRight className="w-8 h-8" />
+                        </span>
+                    </section>
                 </section>
 
                 {/* Property details, location and contact */}
@@ -82,43 +94,43 @@ const PropertyDetails = ({ params }) => {
                             <h3 className="text-[1.5rem] sm:text-[2rem] font-bold leading-6 md:leading-8 mb-3 sm:mb-4">Amenities</h3>
                             <section className="grid grid-cols-2 gap-1 sm:gap-2 md:gap-3 space-y-3 md:space-y-4">
                                 {/* Amenities Checkboxes */}
-                                <section className="md:flex md:items-center md:gap-0.5 mt-1">
+                                <section className="flex justify-start items-center md:gap-0.5 mt-1">
                                     <input id="carpark" name="carpark" type="checkbox" className="accent-[#FF7F50] mr-1" />
                                     <label htmlFor="carpark" className="text-xs sm:text-sm font-medium text-justify leading-0 text-[#344054B2]">Car Park</label>
                                 </section>
-                                <section className="md:flex md:items-center md:gap-0.5 mt-1">
+                                <section className="flex justify-start items-center md:gap-0.5 mt-1">
                                     <input id="homeautomation" name="homeautomation" type="checkbox" className="accent-[#FF7F50] mr-1" />
                                     <label htmlFor="homeautomation" className="text-xs sm:text-sm font-medium text-justify leading-0 text-[#344054B2]">Home Automation</label>
                                 </section>
-                                <section className="md:flex md:items-center md:gap-0.5 mt-1">
+                                <section className="flex justify-start items-center md:gap-0.5 mt-1">
                                     <input id="cctv" name="cctv" type="checkbox" className="accent-[#FF7F50] mr-1" />
                                     <label htmlFor="cctv" className="text-xs sm:text-sm font-medium text-justify leading-0 text-[#344054B2]">CCTV Camera</label>
                                 </section>
-                                <section className="md:flex md:items-center md:gap-0.5 mt-1">
+                                <section className="flex justify-start items-center md:gap-0.5 mt-1">
                                     <input id="furnished" name="furnished" type="checkbox" className="accent-[#FF7F50] mr-1" />
                                     <label htmlFor="furnished" className="text-xs sm:text-sm font-medium text-justify leading-0 text-[#344054B2]">Furnished</label>
                                 </section>
-                                <section className="md:flex md:items-center md:gap-0.5 mt-1">
+                                <section className="flex justify-start items-center md:gap-0.5 mt-1">
                                     <input id="garden" name="garden" type="checkbox" className="accent-[#FF7F50] mr-1" />
                                     <label htmlFor="garden" className="text-xs sm:text-sm font-medium text-justify leading-0 text-[#344054B2]">Garden</label>
                                 </section>
-                                <section className="md:flex md:items-center md:gap-0.5 mt-1">
+                                <section className="flex justify-start items-center md:gap-0.5 mt-1">
                                     <input id="storage" name="storage" type="checkbox" className="accent-[#FF7F50] mr-1" />
                                     <label htmlFor="storage" className="text-xs sm:text-sm font-medium text-justify leading-0 text-[#344054B2]">Storage</label>
                                 </section>
-                                <section className="md:flex md:items-center md:gap-0.5 mt-1">
+                                <section className="flex justify-start items-center md:gap-0.5 mt-1">
                                     <input id="backyard" name="backyard" type="checkbox" className="accent-[#FF7F50] mr-1" />
                                     <label htmlFor="backyard" className="text-xs sm:text-sm font-medium text-justify leading-0 text-[#344054B2]">Backyard</label>
                                 </section>
-                                <section className="md:flex md:items-center md:gap-0.5 mt-1">
+                                <section className="flex justify-start items-center md:gap-0.5 mt-1">
                                     <input id="gym" name="gym" type="checkbox" className="accent-[#FF7F50] mr-1" />
                                     <label htmlFor="gym" className="text-xs sm:text-sm font-medium text-justify leading-0 text-[#344054B2]">Gym</label>
                                 </section>
-                                <section className="md:flex md:items-center md:gap-0.5 mt-1">
+                                <section className="flex justify-start items-center md:gap-0.5 mt-1">
                                     <input id="homeoffice" name="homeoffice" type="checkbox" className="accent-[#FF7F50] mr-1" />
                                     <label htmlFor="homeoffice" className="text-xs sm:text-sm font-medium text-justify leading-0 text-[#344054B2]">Home Office</label>
                                 </section>
-                                <section className="md:flex md:items-center md:gap-0.5 mt-1">
+                                <section className="flex justify-start items-center md:gap-0.5 mt-1">
                                     <input id="walkincloset" name="walkincloset" type="checkbox" className="accent-[#FF7F50] mr-1" />
                                     <label htmlFor="walkincloset" className="text-xs sm:text-sm font-medium text-justify leading-0 text-[#344054B2]">Walk-In Closet</label>
                                 </section>
@@ -145,7 +157,7 @@ const PropertyDetails = ({ params }) => {
                                     placeholder="Full Name"
                                     required
                                     autoComplete="name"
-                                    className="bg-white block w-full rounded-sm border-0 py-2.5 text-[#344054] shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#344054] text-sm sm:text-lg sm:leading-6"
+                                    className="bg-white block w-full rounded-sm border-0 py-2.5 text-[#344054] shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#344054] text-sm sm:text-base sm:leading-6"
                                 />
                                 </section>
                             </section>
@@ -159,7 +171,7 @@ const PropertyDetails = ({ params }) => {
                                     placeholder="Email Address"
                                     required
                                     autoComplete="email"
-                                    className="block w-full rounded-sm border-0 py-2.5 text-[#344054] shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#344054] text-sm sm:text-lg sm:leading-6"
+                                    className="block w-full rounded-sm border-0 py-2.5 text-[#344054] shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#344054] text-sm sm:text-base sm:leading-6"
                                 />
                                 </section>
                             </section>
@@ -173,7 +185,7 @@ const PropertyDetails = ({ params }) => {
                                     placeholder="Phone Number"
                                     required
                                     autoComplete="phone-number"
-                                    className="block w-full rounded-sm border-0 py-2.5 text-[#344054] shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#344054] text-sm sm:text-lg sm:leading-6"
+                                    className="block w-full rounded-sm border-0 py-2.5 text-[#344054] shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#344054] text-sm sm:text-base sm:leading-6"
                                 />
                                 </section>
                             </section>
@@ -188,7 +200,7 @@ const PropertyDetails = ({ params }) => {
                                     placeholder="Your Message"
                                     required
                                     rows={5}
-                                    className="block w-full rounded-sm border-0 py-1.5 text-[#344054] shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#344054] text-sm sm:text-lg sm:leading-6"
+                                    className="block w-full rounded-sm border-0 py-1.5 text-[#344054] shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#344054] text-sm sm:text-base sm:leading-6"
                                     />
                                 </section>
                             </section>
@@ -270,3 +282,6 @@ const PropertyDetails = ({ params }) => {
 }
 
 export default PropertyDetails
+
+
+const PropertyImages = [house1, house2, house3, house4]

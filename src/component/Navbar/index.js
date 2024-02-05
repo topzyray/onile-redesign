@@ -24,7 +24,7 @@ const navLinks = [
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [userMenu, setUserMenu] = useState(false);
   const [userMenuLarge, setUserMenuLarge] = useState(false);
 
